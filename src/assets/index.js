@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -29,14 +28,10 @@ import dar from "./company/dar.png";
 import nazarbayevuni from "./company/nazarbayevuni.png";
 import fizmat from "./company/fizmat.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import footballproject from "./footballproject.png";
 import hotels from "./hotels.png";
 
 export {
-  logo,
   backend,
   creator,
   mobile,
@@ -61,9 +56,6 @@ export {
   dar,
   nazarbayevuni,
   fizmat,
-  carrent,
-  jobit,
-  tripguide,
   python,
   sklearn,
   mui,
