@@ -22,6 +22,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import python from "./tech/python.png";
 import sklearn from './tech/sklearn.png';
+import mui from './tech/mui.png';
 
 import nokia from "./company/nokia.png";
 import dar from "./company/dar.png";
@@ -31,6 +32,8 @@ import fizmat from "./company/fizmat.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import footballproject from "./footballproject.png";
+import hotels from "./hotels.png";
 
 export {
   logo,
@@ -63,4 +66,7 @@ export {
   tripguide,
   python,
   sklearn,
+  mui,
+  footballproject,
+  hotels
 };
