@@ -20,6 +20,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import python from "./tech/python.png";
+import sklearn from './tech/sklearn.png';
 
 import nokia from "./company/nokia.png";
 import dar from "./company/dar.png";
@@ -59,4 +61,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  python,
+  sklearn,
 };

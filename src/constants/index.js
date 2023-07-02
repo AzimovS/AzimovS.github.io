@@ -12,6 +12,8 @@ import {
   tailwind,
   nodejs,
   mongodb,
+  python,
+  sklearn,
   git,
   figma,
   docker,
@@ -57,16 +59,16 @@ const services = [
 
 const technologies = [
   {
+    name: 'git',
+    icon: git,
+  },
+  {
     name: 'HTML 5',
     icon: html,
   },
   {
     name: 'CSS 3',
     icon: css,
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
   },
   {
     name: 'TypeScript',
@@ -77,36 +79,12 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux,
+    name: 'Python',
+    icon: python,
   },
   {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
-    name: 'MongoDB',
-    icon: mongodb,
-  },
-  {
-    name: 'Three JS',
-    icon: threejs,
-  },
-  {
-    name: 'git',
-    icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
+    name: 'Sklearn',
+    icon: sklearn,
   },
 ];
 
