@@ -2,13 +2,13 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://gitname.github.io/react-gh-pages",
+  "homepage": "https://azimovs.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
