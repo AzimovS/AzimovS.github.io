@@ -100,7 +100,8 @@ const experiences = [
     iconBg: '#383E56',
     date: 'May 2023 - Present',
     points: [
-      'Working on 3D Generative AI and virtual reality.',
+      'Researched the state-of-the-art text-to-3D models.',
+      'Developed a full-stack application for the interaction with 3D models in extended reality',
     ],
   },
   {
