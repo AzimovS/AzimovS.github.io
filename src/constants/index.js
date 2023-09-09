@@ -101,7 +101,7 @@ const experiences = [
     date: 'May 2023 - Present',
     points: [
       'Researched the state-of-the-art text-to-3D models.',
-      'Developed a full-stack application for the interaction with 3D models in extended reality',
+      'Developed a full-stack application for the interaction with 3D models in extended reality.',
     ],
   },
   {
@@ -112,8 +112,8 @@ const experiences = [
     date: 'March 2022 - March 2023',
     points: [
       'Worked on the client-side of the billing service, where the merchant can create an invoice, subscription, and discount for customers in a team of 2 backend developers, Quality Assurance engineer, development manager.',
-      `Contributed to the company's  main website dar.io and naiza.tv`,
-      'Contributed to more than 25 releases',
+      `Contributed to the company's  main website dar.io and naiza.tv.`,
+      'Contributed to more than 25 releases.',
     ],
   },
   {
