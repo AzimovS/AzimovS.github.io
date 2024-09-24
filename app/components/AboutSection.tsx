@@ -15,7 +15,7 @@ const TAB_DATA = [
         </li>
         <li>
           <b>Frameworks & Libraries:</b> Next.js, React, Flask, A-Frame,
-          GraphQL, PyQT
+          GraphQL, PyQT, MQTT, Grafana
         </li>
         <li>
           <b>Machine Learning & Data Science:</b> PyTorch, Scikit-learn
