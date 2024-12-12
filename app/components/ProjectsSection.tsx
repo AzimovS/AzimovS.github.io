@@ -3,78 +3,7 @@ import React, { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
-
-const projectsData = [
-  {
-    id: 1,
-    title: "Nifty.Ink",
-    description: "Putting the fun in non-fungible tokens",
-    image: "/nifty.png",
-    tag: ["All", "Blockchain", "Web"],
-    gitUrl: "https://github.com/BuidlGuidl/nifty-ink",
-    previewUrl: "https://nifty.ink/",
-  },
-  {
-    id: 2,
-    title: "Doodle.exchange",
-    description:
-      "Each participant creates a drawing based on a randomly selected word. Then, discover if GPT can accurately identify and describe what the drawing represents.",
-    image: "/doodle.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/BuidlGuidl/doodle-exchange",
-    previewUrl: "https://doodle.exchange/",
-  },
-  {
-    id: 3,
-    title: "Blockchain Github Issues",
-    description:
-      "The goal of this website is to provide an efficient way to monitor open issues across blockchain projects hosted on GitHub.",
-    image: "/blockchain-issues.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/AzimovS/blockchain-github-issues",
-    previewUrl: "https://blockchain-github-issues.vercel.app/",
-  },
-  {
-    id: 4,
-    title: "The Bot of Wall Street",
-    description:
-      "The automated stock trading bot for optimized returns and utilizing a MAPE-K feedback control loop and ARIMA.",
-    image: "the-bot-of-wall-street.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/ricardochavezt/the-bot-of-wall-street",
-    previewUrl: "https://github.com/ricardochavezt/the-bot-of-wall-street",
-  },
-  {
-    id: 5,
-    title: "Forest Fire Detection System",
-    description:
-      "IoT-based forest fire detection system stands as a compelling demonstration of an architecture for early fire detection in forested areas.",
-    image: "/ffds.png",
-    tag: ["All", "Other"],
-    gitUrl: "https://github.com/AzimovS/iot-forest-fire-detection",
-    previewUrl: "https://github.com/AzimovS/iot-forest-fire-detection",
-  },
-  {
-    id: 6,
-    title: "Football Actions Classification",
-    description:
-      "Desktop application that allows users to interact with the ML and DL algorithms that train, visualize and predict football actions on provided data.",
-    image: "/football.png",
-    tag: ["All", "Other"],
-    gitUrl: "https://github.com/AzimovS/senior-project",
-    previewUrl: "https://github.com/AzimovS/senior-project",
-  },
-  // {
-  //   id: 7,
-  //   title: "Hotel Management System",
-  //   description:
-  //     "Web application that enables guests can book hotel rooms, desk clerks can approve reservations and managers can control hotel employees (for example, working hours of desk clerks).",
-  //   image: "/images/projects/hotel.png",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "https://github.com/ironsoul0/hotel-management",
-  //   previewUrl: "https://github.com/ironsoul0/hotel-management",
-  // },
-];
+import { projectsData } from "../contants";
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState<string>("All");

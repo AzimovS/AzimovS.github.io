@@ -2,6 +2,7 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import { motion } from "framer-motion";
 
 const TAB_DATA = [
   {
@@ -60,40 +61,47 @@ const AboutSection = () => {
 
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image
-          src="/about-image.png"
-          alt="about-image.png"
-          width={550}
-          height={550}
-        />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
-          </p>
-          <div className="flex flex-row justify-start mt-2">
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Education{" "}
-            </TabButton>
-          </div>
-          <div className="mt-2">
-            {TAB_DATA.find((t) => t.id === tab)?.content}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
+      >
+        <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+          <Image
+            src="/about-image.png"
+            alt="about-image.png"
+            width={550}
+            height={550}
+          />
+          <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+            <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+            <p className="text-base lg:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              voluptuous.
+            </p>
+            <div className="flex flex-row justify-start mt-2">
+              <TabButton
+                selectTab={() => handleTabChange("skills")}
+                active={tab === "skills"}
+              >
+                {" "}
+                Skills{" "}
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("education")}
+                active={tab === "education"}
+              >
+                {" "}
+                Education{" "}
+              </TabButton>
+            </div>
+            <div className="mt-2">
+              {TAB_DATA.find((t) => t.id === tab)?.content}
+            </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
