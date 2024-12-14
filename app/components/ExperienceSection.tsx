@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import {
@@ -45,31 +45,26 @@ const ExperienceCard = ({ experience }: any) => (
   </VerticalTimelineElement>
 );
 
-const textVariant = () => ({
-  hidden: {
-    y: -150,
-    opacity: 0,
-  },
-  show: {
-    y: 2000,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      duration: 1.25,
-    },
-  },
-});
+const experienceHeader = {
+  initial: { opacity: 0, scale: 0.5 },
+  animate: { opacity: 1, scale: 1 },
+};
 
 const ExperienceSection = () => {
-  //   const isInView = useInView(ref, { once: true });
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
-          What I have done so far
-        </p>
-        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
+      <motion.div
+        ref={ref}
+        variants={experienceHeader}
+        initial="initial"
+        animate={isInView ? "animate" : "initial"}
+        transition={{ duration: 0.3 }}
+        className="col-span-8 place-self-center text-center"
+      >
+        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
           Work Experience
         </h2>
       </motion.div>
