@@ -64,12 +64,12 @@ const ExperienceSection = () => {
         transition={{ duration: 0.3 }}
         className="col-span-8 place-self-center text-center"
       >
-        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+        <h2 className="text-center text-4xl font-bold text-white mt-4">
           Work Experience
         </h2>
       </motion.div>
 
-      <div className="mt-20 flex flex-col">
+      <div className="mt-8">
         <VerticalTimeline lineColor="white" animate>
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
