@@ -1,5 +1,5 @@
 "use client";
-import React, { useTransition, useState } from "react";
+import React, { useTransition, useState, useCallback } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 import { motion } from "framer-motion";
@@ -41,7 +41,7 @@ const TAB_DATA = [
         </li>
         <ul className="list-disc pl-4">
           <li>Åbo Akademi University</li>
-          <li>University of L'Aquila</li>
+          <li>University of L&apos;Aquila</li>
         </ul>
         <li>Nazarbayev University</li>
       </ul>
@@ -51,13 +51,16 @@ const TAB_DATA = [
 
 const AboutSection = () => {
   const [tab, setTab] = useState<string>("skills");
-  const [isPending, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
 
-  const handleTabChange = (id: string) => {
-    startTransition(() => {
-      setTab(id);
-    });
-  };
+  const handleTabChange = useCallback(
+    (id: string) => {
+      startTransition(() => {
+        setTab(id);
+      });
+    },
+    [startTransition, setTab]
+  );
 
   return (
     <section className="text-white" id="about">

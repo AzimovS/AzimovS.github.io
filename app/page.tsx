@@ -4,14 +4,14 @@ import Footer from "./components/Footer";
 import IntroSection from "./components/IntroSection";
 import Navbar from "./components/Navbar";
 import ProjectsSection from "./components/ProjectsSection";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
-const ExperienceSection = dynamic(
-  () => import("./components/ExperienceSection"),
-  {
-    ssr: false,
-  }
-);
+// const ExperienceSection = dynamic(
+//   () => import("./components/ExperienceSection"),
+//   {
+//     ssr: false,
+//   }
+// );
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
       <div className="container mt-24 mx-auto px-12 py-4">
         <IntroSection />
         <AboutSection />
-        <ExperienceSection />
+        {/* <ExperienceSection /> */}
         <ProjectsSection />
         <ContactSections />
       </div>
