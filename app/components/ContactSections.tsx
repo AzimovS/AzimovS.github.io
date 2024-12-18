@@ -4,32 +4,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import SectionWrapper from "../hoc/SectionWrapper";
-// import { slideIn } from "../utils/motion";
-// import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-
-export const slideIn = (
-  direction: string,
-  type: string,
-  delay: number,
-  duration: number
-) => {
-  return {
-    hidden: {
-      x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
-      y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
-    },
-    show: {
-      x: 0,
-      y: 0,
-      transition: {
-        type: type,
-        delay: delay,
-        duration: duration,
-        ease: "easeOut",
-      },
-    },
-  };
-};
+import { slideIn } from "../utils/motion";
 
 const Contact = () => {
   return (
@@ -37,7 +12,12 @@ const Contact = () => {
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
       <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
+        variants={slideIn({
+          direction: "left",
+          type: "tween",
+          delay: 0.2,
+          duration: 1,
+        })}
         className="flex-[0.75] bg-zinc-800 p-8 rounded-2xl border border-amber-500"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
