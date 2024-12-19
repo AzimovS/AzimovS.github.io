@@ -28,7 +28,7 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => (
       <img
         src={experience.icon}
         alt={experience.company_name}
-        className="w-[80%] h-[80%] object-contain"
+        className="w-[80%] h-[80%] object-contain rounded-full"
       />
     </div>
     <div className="ml-4 md:ml-8 flex-1">
@@ -37,7 +37,7 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => (
         {experience.company_name}
       </p>
       <p className="text-white-100 text-[14px] mt-2">{experience.date}</p>
-      <ul className="mt-3 list-disc ml-5 space-y-2">
+      <ul className="mt-1 list-disc ml-5 space-y-1">
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
@@ -69,13 +69,10 @@ const ExperienceSection = () => {
       <div className="relative">
         <div className="absolute bg-gradient-to-r from-primary-400 to-secondary-600 left-8 top-0 w-1 bg-white h-full transform -translate-x-1/2" />
 
-        <div className="flex flex-col space-y-8 pl-16">
+        <div className="flex flex-col space-y-8 pl-16 gap-3">
           {experiences.map((experience, index) => (
             <React.Fragment key={index}>
               <ExperienceCard experience={experience} />
-              {index < experiences.length - 1 && (
-                <div className="h-4 w-1 bg-white mx-auto transform -translate-x-1/2" />
-              )}
             </React.Fragment>
           ))}
         </div>

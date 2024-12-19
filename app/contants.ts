@@ -1,10 +1,21 @@
 export const experiences = [
   {
+    title: "Fullstack Blockchain Developer",
+    company_name: "BuidlGuidl",
+    icon: "/company/bg.png",
+    iconBg: "#383E56",
+    date: "May 2023 - Present",
+    points: [
+      "Researched the state-of-the-art text-to-3D models.",
+      "Developed a full-stack application for the interaction with 3D models in extended reality.",
+    ],
+  },
+  {
     title: "Advanced Technology Group Trainee",
     company_name: "Nokia",
     icon: "/company/nokia.png",
     iconBg: "#383E56",
-    date: "May 2023 - Present",
+    date: "May 2023 - Nov 2023",
     points: [
       "Researched the state-of-the-art text-to-3D models.",
       "Developed a full-stack application for the interaction with 3D models in extended reality.",
