@@ -21,7 +21,7 @@ const Contact = () => {
         className="flex-[0.75] bg-zinc-800 p-8 rounded-2xl border border-amber-500"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <h3 className={styles.sectionHeadText}>Contact</h3>
 
         <p className="sm:text-[18px] text-[14px] text-secondary tracking-wider">
           Email:{" "}

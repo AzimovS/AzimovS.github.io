@@ -56,7 +56,7 @@ const ExperienceSection = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section ref={ref} className="" id="work">
+    <section ref={ref} className="pt-20 -mt-20" id="work">
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={isInView ? { opacity: 1, scale: 1 } : {}}
